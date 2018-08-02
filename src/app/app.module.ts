@@ -12,7 +12,6 @@ import { VirtualscrollPage } from '../pages/virtualscroll/virtualscroll';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http';
-import { DataProvider } from '../providers/data/data';
 
 @NgModule({
   declarations: [
@@ -40,8 +39,7 @@ import { DataProvider } from '../providers/data/data';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DataProvider,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
