@@ -1,0 +1,43 @@
+page-animation {
+
+    .slow-box, .fast-box{
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    } 
+
+    .slow-box{
+        animation: moveWithMargin 1s linear infinite;
+        background-color: brown
+    }
+    .fast-box{
+        animation: moveWithTransform 1s linear infinite;
+        background-color: coral;
+    }
+
+    @keyframes moveWithMargin {
+        0% {
+            margin-left: 10px;
+        }
+        50% {
+            margin-left: 200px;
+        }
+        100% {
+            margin-left: 0;
+        }
+    }
+
+    @keyframes moveWithTransform {
+        0% {
+            transform: translate3d(0,0,0);
+        }
+        50% {
+            transform: translate3d(200px,0,0);
+        }
+        100% {
+            transform: translate3d(0,0,0);
+        }
+    }
+
+}
