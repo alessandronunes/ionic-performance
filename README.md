@@ -1,5 +1,11 @@
 # ionic-performance
-Performance tests for Ionic Framework
+Performance tests for Ionic Framework:
+
+- Virtual Scroll
+- Infinite Scroll
+- List Filtering
+- Skeleton Screen
+- Animation
 
 Usage
 
