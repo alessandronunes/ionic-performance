@@ -2,8 +2,11 @@
 Performance tests for Ionic Framework
 
 Usage
+
 1
-Install Node.js+NPM
+
+Install [Node.js]
+
 
 2
 ```sh
@@ -12,3 +15,5 @@ $ cd ionic-performance
 $ npm install
 $ ionic serve
 ```
+
+[node.js]: <http://nodejs.org>
