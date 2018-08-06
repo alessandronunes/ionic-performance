@@ -6,9 +6,9 @@ Usage
 Install Node.js+NPM
 
 2
-`
+```sh
 $ git clone https://github.com/alessandronunes/ionic-performance.git
 $ cd ionic-performance
 $ npm install
 $ ionic serve
-`
+```
