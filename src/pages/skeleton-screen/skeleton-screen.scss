@@ -1,21 +1,4 @@
-page-skeleton {
-    @media (max-width: 576px) {
-        ion-card-content {
-            font-size: 2rem !important;
-        }
-    }
- 
-    @media (max-width: 820px) {
-        .mobile-fab {
-            display: none;
-        }
-    }
- 
-    @media (min-width: 820px) {
-        .web-fab {
-            display: none;
-        }
-    }
+page-skeleton-screen {
 
     .skeleton {
         h2, h3, ion-avatar {
@@ -43,4 +26,4 @@ page-skeleton {
           height: 1em;
         }
     }
- }
+}

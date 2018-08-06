@@ -4,18 +4,17 @@ import { HttpClient } from '@angular/common/http';
 import "rxjs/add/operator/map";
 
 @Component({
- selector: 'page-virtualscroll',
- templateUrl: 'virtualscroll.html'
+ selector: 'page-virtual-scroll',
+ templateUrl: 'virtual-scroll.html'
 })
-export class VirtualscrollPage {
+export class VirtualScrollPage {
 
  users = [];
 
  constructor(public navCtrl: NavController, private httpClient: HttpClient) {
-   this.httpClient.get(`https://randomuser.me/api/?results=100`)
+   this.httpClient.get('https://randomuser.me/api/?results=100')
    .subscribe(res => {
      this.users = this.users.concat(res['results']);
-     document.getElementById('skeleton').style.display = 'none';
    })
  }
 }

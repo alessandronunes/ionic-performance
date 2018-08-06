@@ -4,10 +4,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { VirtualScrollPage } from '../pages/virtual-scroll/virtual-scroll';
+import { InfiniteScrollPage } from '../pages/infinite-scroll/infinite-scroll';
+import { ListFilteringPage } from '../pages/list-filtering/list-filtering';
+import { SkeletonScreenPage } from '../pages/skeleton-screen/skeleton-screen';
 import { AnimationPage } from '../pages/animation/animation';
-import { SkeletonPage } from '../pages/skeleton/skeleton';
-import { VirtualscrollPage } from '../pages/virtualscroll/virtualscroll';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +16,7 @@ import { VirtualscrollPage } from '../pages/virtualscroll/virtualscroll';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = ListPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -25,10 +26,11 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List Filtering', component: ListPage },
-      { title: 'Animation', component: AnimationPage },
-      { title: 'Skeleton Scroll', component: SkeletonPage },
-      { title: 'Virtual Scroll', component: VirtualscrollPage }
+      { title: 'Virtual Scroll', component: VirtualScrollPage },
+      { title: 'Infinite Scroll', component: InfiniteScrollPage },
+      { title: 'List Filtering', component: ListFilteringPage },
+      { title: 'Skeleton Screen', component: SkeletonScreenPage },
+      { title: 'Animation', component: AnimationPage }
     ];
 
   }

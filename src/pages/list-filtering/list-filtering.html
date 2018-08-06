@@ -8,9 +8,9 @@
 </ion-header>
 
 <ion-content>
- 
+  
   <ion-searchbar [(ngModel)]="searchTerm" [formControl]="searchControl" (ionInput)="onSearchInput()"></ion-searchbar>
-  <div *ngIf="searching" class="spinner-container">
+  <div *ngIf="searching" text-center padding>
       <ion-spinner></ion-spinner>
   </div>
   <ion-list>
@@ -20,3 +20,4 @@
   </ion-list>
 
 </ion-content>
+  

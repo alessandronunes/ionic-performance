@@ -4,10 +4,11 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { VirtualScrollPage } from '../pages/virtual-scroll/virtual-scroll';
+import { InfiniteScrollPage } from '../pages/infinite-scroll/infinite-scroll';
+import { ListFilteringPage } from '../pages/list-filtering/list-filtering';
+import { SkeletonScreenPage } from '../pages/skeleton-screen/skeleton-screen';
 import { AnimationPage } from '../pages/animation/animation';
-import { SkeletonPage } from '../pages/skeleton/skeleton';
-import { VirtualscrollPage } from '../pages/virtualscroll/virtualscroll';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,9 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     MyApp,
     HomePage,
-    SkeletonPage,
-    VirtualscrollPage,
-    ListPage,
+    VirtualScrollPage,
+    InfiniteScrollPage,
+    ListFilteringPage,
+    SkeletonScreenPage,
     AnimationPage
   ],
   imports: [
@@ -31,9 +33,10 @@ import { HttpClientModule } from '@angular/common/http';
   entryComponents: [
     MyApp,
     HomePage,
-    SkeletonPage,
-    VirtualscrollPage,
-    ListPage,
+    VirtualScrollPage,
+    InfiniteScrollPage,
+    ListFilteringPage,
+    SkeletonScreenPage,
     AnimationPage
   ],
   providers: [
